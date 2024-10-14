@@ -12,9 +12,9 @@ fn main() {
                 .takes_value(true)
                 .required(true))
         .arg(Arg::with_name("input")
-            .help("File to search")
-            .takes_value(true)
-            .required(true))
+                .help("File to search")
+                .takes_value(true)
+                .required(true))
         .get_matches();
     
     let pattern = args.value_of("pattern").unwrap();
